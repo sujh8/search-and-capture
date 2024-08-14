@@ -1,0 +1,6 @@
+.background-container {
+  background: url('ss.gif') no-repeat center center fixed; 
+  background-size: cover;
+  min-height: 100vh;
+  padding: 20px;
+}

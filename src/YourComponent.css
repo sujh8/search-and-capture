@@ -1,0 +1,116 @@
+/* Container for the entire page */
+.page-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Content area within the page container */
+.content {
+  position: relative;
+  min-height: 80vh; /* Ensure enough height for content */
+}
+
+/* Styling for instructions section */
+.instructions {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #f9f9f9;
+  margin-bottom: 20px;
+}
+
+/* Container for the upload section */
+.upload-screenshot-container {
+  position: relative;
+}
+
+/* Margin at the top of the upload section */
+.upload-section {
+  margin-top: 20px;
+}
+
+/* Styling for the upload label */
+.upload-label {
+  display: block;
+  cursor: pointer;
+}
+
+/* Placeholder styling for file upload */
+.upload-placeholder {
+  border: 2px dashed #ccc;
+  padding: 20px;
+  text-align: center;
+  color: #888;
+}
+
+/* Styling for uploaded image */
+.uploaded-image img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* Styling for the submit button */
+.submit-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+/* Hover effect for the submit button */
+.submit-button:hover {
+  background-color: #218838;
+}
+
+/* Container for scroll buttons */
+.arrow-buttons {
+     position: relative;
+    right: -127px;
+    display: flex;
+    flex-direction: row-reverse; /* Add padding to ensure space from edges */
+}
+
+/* Styling for individual scroll buttons */
+.arrow-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px; /* Size of the button */
+  height: 50px; /* Size of the button */
+}
+
+/* Disabled state for scroll buttons */
+.arrow-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Hover effect for enabled scroll buttons */
+.arrow-button:hover:enabled {
+  background-color: #0056b3;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .arrow-button {
+    width: 40px; /* Adjust size for smaller screens */
+    height: 40px; /* Adjust size for smaller screens */
+    font-size: 1.2rem;
+  }
+
+  .arrow-buttons {
+    right: 5vw; /* Adjust position for smaller screens */
+    bottom: 5vh; /* Adjust position for smaller screens */
+  }
+}
